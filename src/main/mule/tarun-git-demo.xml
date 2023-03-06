@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="bb8c30a0-0ff3-4b4e-8dff-c5decd3e5e38" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="tarun-git-demoFlow" doc:id="57833827-cf17-4847-8c81-47abe2b4204f" >
+		<http:listener doc:name="Listener" doc:id="f6238dfe-1c7b-481a-bfeb-30224341002b" config-ref="HTTP_Listener_config" path="/test"/>
+		<logger level="INFO" doc:name="Logger" doc:id="3bee358f-071c-4e51-9292-25753eae25af" message="+++ started +++"/>
+		<set-payload value="Hello World!" doc:name="Set Payload" doc:id="16bdcd32-b2e9-4fa4-813a-4677be5276c7" />
+		<logger level="INFO" doc:name="Logger" doc:id="dd5fb9dd-1c71-456b-9249-50a91989c142" message="#[payload]  +++ ended +++"/>
+	</flow>
+</mule>
