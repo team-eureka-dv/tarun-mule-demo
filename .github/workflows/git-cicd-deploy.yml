@@ -70,18 +70,6 @@ jobs:
                         }
                       }
                     }
-                  },
-                  {
-                    "id": "MuleRepository",
-                    "username": "Concrete-Direct-CICD",
-                    "password": "dJ3:B}~yFs=BHMQJ",
-                    "configuration": {
-                      "httpConfiguration": {
-                        "all": {
-                          "usePreemptive": "true"
-                        }
-                      }
-                    }
                   }
                 ]      
         
