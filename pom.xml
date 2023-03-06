@@ -33,10 +33,10 @@
 		<classifier>mule-application</classifier>
 		<cloudHubDeployment>
 			<uri>https://anypoint.mulesoft.com</uri>
-			<muleVersion>${app.runtime}</muleVersion>
-			<username>${username}</username>
-			<password>${password}</password>
-			<applicationName>${project.name}</applicationName>
+			<muleVersion>4.4.0</muleVersion>
+			<username>Concrete-Direct-CICD</username>
+			<password>dJ3:B}~yFs=BHMQJ</password>
+			<applicationName>tarun-git-demo</applicationName>
 			<environment>Sandbox</environment>
 			<workerType>MICRO</workerType>
 			<region>eu-west-1</region>
