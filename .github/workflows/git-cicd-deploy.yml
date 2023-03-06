@@ -61,8 +61,8 @@ jobs:
                 [
                   {
                     "id": "anypoint-exchange-v2",
-                    "username": "${{ secrets.ANYPOINT_USERNAME }}",
-                    "password": "${{ secrets.ANYPOINT_PASSWORD }}",
+                    "username": "Concrete-Direct-CICD",
+                    "password": "dJ3:B}~yFs=BHMQJ",
                     "configuration": {
                       "httpConfiguration": {
                         "all": {
@@ -73,8 +73,8 @@ jobs:
                   },
                   {
                     "id": "MuleRepository",
-                    "username": "${{ secrets.ANYPOINT_USERNAME }}",
-                    "password": "${{ secrets.ANYPOINT_PASSWORD }}",
+                    "username": "Concrete-Direct-CICD",
+                    "password": "dJ3:B}~yFs=BHMQJ",
                     "configuration": {
                       "httpConfiguration": {
                         "all": {
@@ -138,8 +138,8 @@ jobs:
           
       - name: Deploy to Anypoint Platform
         env:
-          USERNAME: ${{ secrets.ANYPOINT_USERNAME }}
-          PASSWORD: ${{ secrets.ANYPOINT_PASSWORD }}
+          USERNAME: "Concrete-Direct-CICD"
+          PASSWORD: "dJ3:B}~yFs=BHMQJ"
           
         run: |
           artifactName=$(ls *.jar | head -1)
@@ -180,8 +180,8 @@ jobs:
           
       - name: Deploy to Anypoint Platform
         env:
-          USERNAME: ${{ secrets.ANYPOINT_USERNAME }}
-          PASSWORD: ${{ secrets.ANYPOINT_PASSWORD }}
+          USERNAME: "Concrete-Direct-CICD"
+          PASSWORD: "dJ3:B}~yFs=BHMQJ"
           
         run: |
           artifactName=$(ls *.jar | head -1)
@@ -218,8 +218,8 @@ jobs:
           
       - name: Deploy to Anypoint Platform
         env:
-          USERNAME: ${{ secrets.ANYPOINT_USERNAME }}
-          PASSWORD: ${{ secrets.ANYPOINT_PASSWORD }}
+          USERNAME: "Concrete-Direct-CICD"
+          PASSWORD: "dJ3:B}~yFs=BHMQJ"
           
         run: |
           artifactName=$(ls *.jar | head -1)
