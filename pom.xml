@@ -37,6 +37,7 @@
 			<username>Concrete-Direct-CICD</username>
 			<password>dJ3:B}~yFs=BHMQJ</password>
 			<applicationName>tarun-git-demo</applicationName>
+			<businessGroup>Digital - The Concrete Company</businessGroup>
 			<environment>Sandbox</environment>
 			<workerType>MICRO</workerType>
 			<region>eu-west-1</region>
